@@ -21,14 +21,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   colour: Colors.lightBlueAccent,
                   title: 'Log In',
                   onPressed: () {
-                    Navigator.pushNamed(context, 'login_screen');
+/*                    Navigator.pushNamed(context, 'login_screen');*/
                   },
                 ),
                 RoundedButton(
                     colour: Colors.blueAccent,
                     title: 'Register',
                     onPressed: () {
-                       Navigator.pushNamed(context, 'registration_screen');
+/*                       Navigator.pushNamed(context, 'registration_screen');*/
                     }),
               ]),
         ));
