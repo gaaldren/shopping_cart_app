@@ -1,4 +1,4 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as bab1;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopping_cart_app/model/item_model.dart';
@@ -89,9 +89,9 @@ class _ProductListState extends State<ProductList> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Product List'),
+        title: const Text('Магазин Ахмеда'),
         actions: [
-          Badge(
+          bab1.Badge(
             badgeContent: Consumer<CartProvider>(
               builder: (context, value, child) {
                 return Text(
@@ -101,7 +101,7 @@ class _ProductListState extends State<ProductList> {
                 );
               },
             ),
-            position: const BadgePosition(start: 30, bottom: 30),
+            position: const bab1.BadgePosition(start: 30, bottom: 30),
             child: IconButton(
               onPressed: () {
                 Navigator.push(
